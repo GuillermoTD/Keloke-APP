@@ -1,5 +1,6 @@
 import { EllipsisVerticalIcon, MessageSquareText } from 'lucide-react';
 
+
 const HeaderSidebar = () => {
   return (
     <div className="w-[100%] h-[3.8rem] flex items-center justify-between px-[1rem] overflow-hidden border-[1px]">
