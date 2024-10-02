@@ -1,5 +1,4 @@
-import MainImage from "../../public/MainImage.svg"
-
+import MainImage from "../assets/MainImage.svg"
 
 
 const RightSide = ()=>{

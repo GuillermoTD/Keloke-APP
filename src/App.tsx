@@ -1,10 +1,10 @@
-import Main from './components/Main';
+import MainContainer from './components/MainContainer';
 
 function App() {
   return (
     <>
-      <div className="bg-slate-200 w-full h-[100vh] flex items-center justify-center">
-        <Main />
+      <div className="bg-slate-400 w-full h-[100vh] flex flex-col items-center justify-center">
+        <MainContainer />
       </div>
     </>
   );

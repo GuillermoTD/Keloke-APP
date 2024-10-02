@@ -2,6 +2,9 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
+
+
+
 .SidebarScroll {
   @apply w-full overflow-auto;
   height: 480px;
