@@ -3,7 +3,7 @@ import SidebarMessage from './SidebarMessage';
 
 const Sidebar = () => {
   return (
-    <div className="w-[40%] h-full">
+    <div className="w-[35%] h-full">
       <HeaderSidebar />
       <div className="SidebarScroll ">
         <SidebarMessage />

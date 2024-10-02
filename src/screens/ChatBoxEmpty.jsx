@@ -1,16 +1,18 @@
+import React from 'react'
 import MainImage from "../assets/MainImage.svg"
+import { Outlet } from "react-router-dom"
 
-
-const RightSide = ()=>{
-    return (
-        <div className="p-[1rem] w-full h-full flex flex-col items-center justify-center gap-[2rem]">
+const ChatBoxEmpty = () => {
+  return (
+    <div className="bg-red-500 w-full h-full">
+        <div className="w-full h-full flex flex-col items-center justify-center gap-[2rem]">
             {/* Main Image when there is no image open */}
             <img src={MainImage} alt="MainImage" className="w-[40%] h-[40%]"/>
             {/* Title of Main Page */}
             <h2 className="font-medium text-[1.8rem]">Chat with your dear friends and family!</h2>
         </div>
-    )
+    </div>
+  )
 }
 
-
-export default RightSide
+export default ChatBoxEmpty
