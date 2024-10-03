@@ -8,7 +8,7 @@ const ChatBox = () => {
         {/* Header */}
         <div className=" h-[4rem] w-full border-[0.118rem] bg-white flex items-center justify-between px-[2rem]">
             <p>Juan Martinez</p>
-            <div>Icons</div>
+            <div>Iconss</div>
         </div>
 
         {/* Chats */}
