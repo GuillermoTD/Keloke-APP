@@ -1,26 +1,27 @@
-import {userContext,createContext} from "react"
+import { createContext, useContext, useState, useEffect } from "react";
 
+export const ChatsContext = createContext();
 
-const ChatContext = createContext()
+export const ChatsProvider = ({ children }) => {
+  const [activeScreen, setActiveScreen] = useState("Active");
+  const [currentChat, setCurrentChat] = useState({});
 
-export const ChatsProvider = ({children})=>{
-
-    const [activeScreen, setActiveScreen] = useState('Active')
-    const [currentChat, setCurrentChat] = useState({})
-
-    const changeScreen = (screen = null, chat = null)=>{
-        setActiveScreen(screen)
-        // set chat in case is neccesary
-        if(chat){
-            setCurrentChat(chat)
-        }
+  const changeScreen = (screen, chat = null) => {
+    setActiveScreen(screen);
+    // set chat in case is neccesary
+    if (chat) {
+      setCurrentChat(chat);
     }
+  };
 
-    return(
-        <ChatContext.Provider value={{activeScreen,currentChat,changeScreen}}>
-            {children}
-        </ChatContext.Provider>
-    )
-}
+  useEffect(() => {
+ 
+  }, [currentChat,activeScreen]);
 
 
+  return (
+    <ChatsContext.Provider value={{ activeScreen, currentChat, changeScreen }}>
+      {children}
+    </ChatsContext.Provider>
+  );
+};

@@ -4,7 +4,7 @@ import { Outlet } from "react-router-dom"
 
 const ChatBoxEmpty = () => {
   return (
-    <div className="bg-red-500 w-full h-full">
+    <div className=" w-full h-full">
         <div className="w-full h-full flex flex-col items-center justify-center gap-[2rem]">
             {/* Main Image when there is no image open */}
             <img src={MainImage} alt="MainImage" className="w-[40%] h-[40%]"/>

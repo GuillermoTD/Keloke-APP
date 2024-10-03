@@ -3,17 +3,18 @@
 // import { ThemeProvider } from 'acme-theme';
 // import { AuthProvider } from 'acme-auth';
 
-import {
-    RouterProvider,
-  } from "react-router-dom";
+
+
+import { ChatsProvider } from "../contexts/ChatsContext";
 
 import Router from "./Routers"
 
 function Providers({ children }) {
   return (
-    <RouterProvider router={Router}>
-      {children}
-    </RouterProvider>
+
+      <ChatsProvider>
+        {children}
+      </ChatsProvider>
   );
 }
 

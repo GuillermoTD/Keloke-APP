@@ -1,26 +1,34 @@
-import { Outlet } from "react-router-dom"
+import { Outlet } from "react-router-dom";
 
-import ChatScreen from "../screens/ChatScreen"
+import ChatScreen from "../screens/ChatScreen";
 
-import {
-    RouterProvider,
-  } from "react-router-dom";
+import { RouterProvider } from "react-router-dom";
 
-import Router from "../config/Routers"
+import Router from "../config/Routers";
 
-import {Providers} from "../contexts/ChatsContext"
+import { useContext, useEffect, useState } from "react";
 
+import { ChatsContext } from "../contexts/ChatsContext";
+import ChatBoxEmpty from "../screens/ChatBoxEmpty";
 
+const RightSide = () => {
+  const { activeScreen } = useContext(ChatsContext);
 
-const RightSide = ()=>{
+  useEffect(() => {}, [activeScreen]);
+
+  if (activeScreen == "active") {
     return (
-        <Providers>
-            <div className="p-[1rem] w-full h-[90vh] flex flex-col items-center justify-center gap-[2rem] bg-green-300">
-                <ChatScreen/>
-            </div>
-        </Providers>
-    )
-}
+      <div className="p-[1rem] w-full h-[90vh] flex flex-col items-center justify-center gap-[2rem]">
+        soy pantalla activa
+      </div>
+    );
+  }
 
+  return (
+    <div className="p-[1rem] w-full h-[90vh] flex flex-col items-center justify-center gap-[2rem]">
+      <ChatBoxEmpty />
+    </div>
+  );
+};
 
-export default RightSide
+export default RightSide;
