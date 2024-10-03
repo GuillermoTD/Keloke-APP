@@ -3,10 +3,11 @@
 @import 'tailwindcss/utilities';
 
 
-
+body{
+  @apply bg-slate-200 w-full h-[100vh];
+}
 
 .SidebarScroll {
   @apply w-full overflow-auto;
-  height: 480px;
   overflow: auto;
 }

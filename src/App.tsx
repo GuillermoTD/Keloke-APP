@@ -1,16 +1,13 @@
 // import MainContainer from './components/MainContainer';
 
 import { useContext } from "react";
+import { RouterProvider } from "react-router-dom";
 
 
 function App() {
-
-
-
   return (
     <>
-      <div className="bg-slate-400 w-full h-[100vh] flex items-center justify-center">
-      </div>
+      <div className="w-full h-full flex items-center justify-center"></div>
     </>
   );
 }

@@ -7,7 +7,7 @@ import Providers from '../config/Providers';
 
 const MainContainer = () => {
   return (
-    <div className="bg-slate-100 w-[95%] h-[90%] shadow-lg rounded-md flex overflow-hidden">
+    <div className="bg-slate-100 w-full h-[100vh] shadow-lg rounded-md flex overflow-hidden">
       <Providers>
         <Sidebar />
         <RightSide/>

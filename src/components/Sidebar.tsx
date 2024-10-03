@@ -1,5 +1,5 @@
 import HeaderSidebar from './HeaderSidebar';
-import SidebarMessage from './SidebarMessage';
+import ChatItem from './ChatItem';
 import {ChatsContext} from "../contexts/ChatsContext"
 import { useContext } from 'react';
 
@@ -13,18 +13,25 @@ const Sidebar = () => {
 
 
   return (
-    <div className="w-[35%] h-full">
+    <div className="w-[35%] h-[98vh] overflow-scroll overflow-x-hidden">
       <HeaderSidebar />
       <div className="SidebarScroll ">
-        <SidebarMessage />
-        <SidebarMessage />
-        <SidebarMessage />
-        <SidebarMessage />
-        <SidebarMessage />
-        <SidebarMessage />
-        <SidebarMessage />
-        <SidebarMessage />
-        <SidebarMessage />
+        <ChatItem />
+        <ChatItem />
+        <ChatItem />
+        <ChatItem />
+        <ChatItem />
+        <ChatItem />
+        <ChatItem />
+        <ChatItem />
+        <ChatItem />
+        <ChatItem />
+        <ChatItem />
+        <ChatItem />
+        <ChatItem />
+        <ChatItem />
+        <ChatItem />
+ 
       </div>
     </div>
   );

@@ -1,0 +1,11 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+
+
+.Person1, .Person2{
+    @apply bg-red-500;
+    min-height: 2rem;
+    max-height: 5rem;
+}
