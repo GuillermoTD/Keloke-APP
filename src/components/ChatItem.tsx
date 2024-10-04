@@ -7,7 +7,7 @@ const ChatItem = () => {
   const {changeScreen,currentChat} = useContext(ChatsContext)
 
   return (
-    <div className="h-[4rem] border-[0.12rem] w-full flex items-center px-[1rem] gap-[5%] " onClick={()=>{
+    <div className="h-[4rem] border-[0.12rem] w-full flex items-center px-[1rem] gap-[5%] cursor-pointer" onClick={()=>{
       console.log("funcionó")
       changeScreen("ChatItem",{saludo:"test1"})
     }}>

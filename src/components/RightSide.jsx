@@ -1,10 +1,4 @@
-import { Outlet } from "react-router-dom";
 
-import ChatScreen from "../screens/ChatScreen";
-
-import { RouterProvider } from "react-router-dom";
-
-import Router from "../config/Routers";
 
 import { useContext, useEffect, useState } from "react";
 

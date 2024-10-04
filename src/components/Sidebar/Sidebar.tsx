@@ -1,8 +1,9 @@
-import HeaderSidebar from './HeaderSidebar';
-import ChatItem from './ChatItem';
-import {ChatsContext} from "../contexts/ChatsContext"
-import { useContext } from 'react';
-
+import HeaderSidebar from '../HeaderSidebar';
+import ChatItem from '../ChatItem';
+// import {ChatsContext} from "../contexts/ChatsContext"
+// import { useContext } from 'react';
+import "./Sidebar.css"
+import SidebarInput from "../SidebarInput"
 
 const Sidebar = () => {
 
@@ -11,11 +12,11 @@ const Sidebar = () => {
   // console.log(changeCurrent)
   // console.log(currentChat)
 
-
   return (
-    <div className="w-[35%] h-[98vh] overflow-scroll overflow-x-hidden">
+    <div className="w-[35%] h-[98vh]">
       <HeaderSidebar />
-      <div className="SidebarScroll ">
+      <SidebarInput/>
+      <div className="SidebarScroll">
         <ChatItem />
         <ChatItem />
         <ChatItem />
@@ -31,7 +32,6 @@ const Sidebar = () => {
         <ChatItem />
         <ChatItem />
         <ChatItem />
- 
       </div>
     </div>
   );

@@ -2,10 +2,58 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
-
-
 .Person1, .Person2{
-    @apply bg-red-500;
+    @apply  w-full px-[4rem] flex;
     min-height: 2rem;
     max-height: 5rem;
 }
+
+.Person1{
+    justify-content:left;
+}
+
+.Person2{
+    justify-content:right;
+   
+}
+
+.MessagePerson1,.MessagePerson2{
+    @apply text-[0.8rem]
+}
+
+
+.MessagePerson1{
+    @apply bg-emerald-500 p-[1rem] shadow-lg;
+    min-width:8rem;
+    width:15rem;
+    min-height:3rem;
+    border-radius:15px 15px 15px 0px;
+    height:2rem;
+    display: flex;
+    align-items:center;
+    
+}
+
+.MessagePerson2{
+    @apply bg-slate-300 p-[1rem] shadow-lg;
+    min-width:8rem;
+    width:15rem;
+    min-height:3rem;
+    border-radius:15px 15px 0px 15px;
+    height:2rem;
+    display: flex;
+    align-items:center;
+}
+
+.ChatsContainer{
+    background-image: url("../../assets/bg.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover
+}
+
+
+
+
+
+  

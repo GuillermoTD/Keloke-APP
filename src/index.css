@@ -5,9 +5,42 @@
 
 body{
   @apply bg-slate-200 w-full h-[100vh];
+  outline:none;
 }
 
 .SidebarScroll {
   @apply w-full overflow-auto;
   overflow: auto;
+}
+
+.ButtonIcon{
+  @apply p-[0.4rem];
+}
+
+.ButtonIcon:hover{
+  @apply bg-slate-200 transition-all ease-in-out duration-150;
+}
+
+
+/* Personalizar el tamaño del scrollbar */
+.ChatsContainer::-webkit-scrollbar {
+  width: 12px; /* Ancho del scrollbar (vertical) */
+  height: 12px; /* Alto del scrollbar (horizontal) */
+}
+
+/* Personalizar la manija del scrollbar (thumb) */
+.ChatsContainer::-webkit-scrollbar-thumb {
+  background-color: #888; /* Color de la manija */
+  border-radius: 10px; /* Bordes redondeados */
+  border: 3px solid #fff; /* Borde alrededor de la manija */
+}
+
+/* Personalizar el fondo del scrollbar (track) */
+.ChatsContainer::-webkit-scrollbar-track {
+  background-color: #f1f1f1; /* Color de fondo */
+}
+
+/* Personalizar el hover sobre el thumb */
+.ChatsContainer::-webkit-scrollbar-thumb:hover {
+  background-color: #555; /* Color cuando se pasa el mouse */
 }

@@ -1,5 +1,5 @@
 import RightSide from './RightSide';
-import Sidebar from './Sidebar';
+import Sidebar from './Sidebar/Sidebar';
 import Router from "../config/Routers"
 import {useState} from "react"
 import Providers from '../config/Providers';
