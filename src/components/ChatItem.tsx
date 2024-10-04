@@ -18,7 +18,7 @@ const ChatItem = () => {
           <p className="text-[0.8rem] font-medium	">Papolo Rodriguez</p>
           <p className="text-[0.7rem] w-[10rem] truncate">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia
-            nam, porro nostrum ducimus corporis quam eligendi,
+            nam, porro nostrum ducimus corporis quam eligendiretertertert,
           </p>
         </div>
 
