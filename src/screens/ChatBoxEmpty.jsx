@@ -1,6 +1,6 @@
 import React from 'react'
 import MainImage from "../assets/MainImage.svg"
-import { Outlet } from "react-router-dom"
+
 
 const ChatBoxEmpty = () => {
   return (

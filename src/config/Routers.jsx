@@ -4,12 +4,13 @@ import {
 
 import ChatBoxEmpty from "../screens/ChatBoxEmpty"
 import MainContainer from "../components/MainContainer"
+import LoadingPage from "../screens/LoadingPage/LoadingPage";
 
 const Router = createBrowserRouter(
     [
         {
             path: "/",
-            element: <MainContainer/>,
+            element: <LoadingPage/>,
         },
         {
             path: "/login",

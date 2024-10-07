@@ -5,7 +5,6 @@ import EmojiPicker from 'emoji-picker-react';
 
 const ChatBox = () => {
 const [showEmojiPicker, setShowEmojiPicker] = useState(false)
-const [emoji, setEmoji] = useState("")
 const [message, setMessage] = useState("")
 
 const handleEmojiClick = (emoji)=>{

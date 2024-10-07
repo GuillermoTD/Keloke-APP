@@ -1,0 +1,27 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+
+.ProgressBarWrapper{
+    @apply w-[35%] h-[4rem] flex items-center justify-center
+}
+
+.ProgressBar{
+    @apply w-[90%] h-[20%] border-[1px] rounded-full overflow-hidden
+}
+
+.Bar{
+    @apply bg-emerald-600 w-10 h-full transition-all ease-in-out;
+    animation: Animate linear 5s forwards;
+}
+
+@keyframes Animate{
+    0%{
+        width:0;
+    }
+
+    100%{
+        width:100%
+    }
+}
