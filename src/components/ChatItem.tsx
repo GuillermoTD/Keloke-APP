@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import {ChatsContext} from "../contexts/ChatsContext"
-
+import UserImage from "../assets/userImage.png"
 
 const ChatItem = () => {
 
@@ -11,7 +11,9 @@ const ChatItem = () => {
       console.log("funcionó")
       changeScreen("ChatItem",{saludo:"test1"})
     }}>
-      <div className="w-[2.6rem] h-[2.6rem] bg-emerald-300 rounded-full text-[3px]"></div>
+      <div className="w-[2.6rem] h-[2.6rem] rounded-full text-[3px] overflow-hidden">
+          <img src={UserImage} alt="user-image" />
+      </div>
 
       <div className="flex items-center justify-between w-[80%] overflow-hidden">
         <div className="flex flex-col gap-[4px]">

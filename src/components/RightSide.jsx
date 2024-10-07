@@ -13,7 +13,7 @@ const RightSide = () => {
 
   if (activeScreen == "ChatItem") {
     return (
-      <div className=" w-full h-full flex flex-col gap-[2rem]">
+      <div className=" w-full h-full flex flex-col gap-[2rem] ">
        <ChatBox/>
       </div>
     );
