@@ -1,0 +1,32 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+.AuthPage{
+    @apply w-[100vw] h-[100vh] flex flex-col border-[2px] items-center justify-center;
+
+    .AuthPage_Container{
+        @apply w-[70%] h-[90%] bg-white shadow-md rounded-[0.3rem] overflow-hidden flex  items-center justify-center;
+        @apply transition-all ease-in-out duration-700;
+
+        .AuthPage__Authform{
+            @apply w-[50%] h-full p-[0.3rem] flex flex-col items-center justify-center;
+            transition: transform 0.7s ease-in-out, opacity 0.7s ease-in-out;
+            transform: translateY(0); /* Posición inicial */
+        }
+
+        .AuthPage__ImagePresentation{
+           @apply w-[50%] h-full flex items-center justify-center;
+           
+           
+           img{
+                @apply h-[18rem] w-[80%];
+                transition: transform 3s ease-in-out;;
+           }
+        }
+    }
+}
+
+/* .flex-reverse{
+    @apply flex-row-reverse;
+} */

@@ -5,6 +5,7 @@ import {
 import ChatBoxEmpty from "../screens/ChatBoxEmpty"
 import MainContainer from "../components/MainContainer"
 import LoadingPage from "../screens/LoadingPage/LoadingPage";
+import AuthPage from "../screens/AuthPage/AuthPage"
 
 const Router = createBrowserRouter(
     [
@@ -13,9 +14,10 @@ const Router = createBrowserRouter(
             element: <LoadingPage/>,
         },
         {
-            path: "/login",
-            element: <h1>Hola soy login</h1>,
+            path: "/auth",
+            element: <AuthPage/>
         },
+    
     ]
 )
 

@@ -1,0 +1,42 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+
+.LoginBox{
+    @apply h-full w-full flex flex-col items-center pt-[15%] text-[0.8rem] gap-[1rem] ;
+
+    h2{
+        @apply text-[2rem] font-bold mb-[2rem];
+
+    }
+    input{
+        @apply w-[70%] h-[2.5rem] border-[1px] mb-[0.5rem]  pl-[0.5rem] outline-none;
+    }
+
+    .Options1{
+        @apply flex items-center  w-[70%] justify-between;
+
+        .Checked{
+            @apply flex gap-[0.4rem] items-center h-12 w-24;
+
+            input{
+                @apply w-[1rem] h-[1rem];
+            }
+        }
+
+      
+    }
+
+    .LoginButton{
+        @apply bg-emerald-500 w-[70%] py-[0.3rem] text-white text-[1.2rem] text-center;
+        
+    }
+    
+    .NotSigned{
+
+        a{
+            @apply text-emerald-500
+        }
+    }
+}

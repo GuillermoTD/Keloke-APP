@@ -4,7 +4,7 @@
 
 
 .ProgressBarWrapper{
-    @apply w-[35%] h-[4rem] flex items-center justify-center
+    @apply w-[35%] h-[3rem] flex items-center justify-center
 }
 
 .ProgressBar{
