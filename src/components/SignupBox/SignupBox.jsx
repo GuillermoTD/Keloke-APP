@@ -28,3 +28,4 @@ const SignupBox = ({setIsLogged}) => {
 }
 
 export default SignupBox
+
