@@ -1,14 +1,13 @@
-// import MainContainer from './components/MainContainer';
-
-import { useContext } from "react";
-import { RouterProvider } from "react-router-dom";
-
+import { Outlet } from "react-router-dom";
+import Providers from "./config/Providers";
 
 function App() {
   return (
-    <>
-      <div className="w-full h-full flex items-center justify-center"></div>
-    </>
+    <Providers>
+      <div className="w-full h-full flex items-center justify-center">
+        <Outlet />
+      </div>
+    </Providers>
   );
 }
 

@@ -1,8 +1,13 @@
-import React from 'react'
+import {useContext} from 'react'
 import loadingImage from "../../assets/loading.svg"
 import "./LoadingPage.css"
+import { UserContext } from '../../contexts/UserContext'
 
 const LoadingPage = () => {
+
+  const userData = useContext(UserContext)
+  console.log(userData)
+
   return (
     <div className='w-full h-[100vh] flex items-center justify-center flex-col'>
         {/* Image centered  */}

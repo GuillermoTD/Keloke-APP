@@ -12,7 +12,9 @@ import Routers from "./config/Routers"
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <RouterProvider router={Routers}>
-      <App />
+      <Providers>
+        <App />
+      </Providers>
     </RouterProvider>
   </StrictMode>
 );

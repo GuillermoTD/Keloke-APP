@@ -3,6 +3,7 @@
 import { initializeApp } from "firebase/app";
 
 import { getAuth, signInWithCustomToken } from "firebase/auth";
+import { getFirestore } from "firebase/firestore";
 
 
 // Your web app's Firebase configuration
@@ -20,4 +21,5 @@ const app = initializeApp(firebaseConfig);
 
 export const Auth = getAuth(app);
 
+export const DB = getFirestore(app)
 

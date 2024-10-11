@@ -5,6 +5,7 @@ import { signInWithEmailAndPassword } from "firebase/auth";
 import { useState } from 'react';
 import { Auth } from '../../../firebase.config';
 
+
 const LoginBox = ({setIsLogged}) => {
   const [email, setEmail] = useState("")
   const [password, setPassword] = useState("")
@@ -14,15 +15,17 @@ const LoginBox = ({setIsLogged}) => {
       .then((userCredential) => {
         // Signed in 
         const user = userCredential?.user;
-        console.log(user.email)
+        console.log(user)
         // ...
       })
       .catch((error) => {
         const errorCode = error.code;
         const errorMessage = error.message;
-        // ..
+        console.log(errorMessage)
       });
   }
+
+
 
 
 
